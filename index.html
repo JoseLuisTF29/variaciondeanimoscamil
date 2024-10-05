@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frases Motivadoras</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Asegúrate de enlazar el CSS -->
+</head>
+<body>
+    <div class="container">
+        <h1>Selecciona tu estado de ánimo</h1>
+        <div class="emojis">
+            <button class="emoji-btn" onclick="guardarAnimo('Feliz')">😀</button>
+            <button class="emoji-btn" onclick="guardarAnimo('Estresada')">😩</button>
+            <button class="emoji-btn" onclick="guardarAnimo('Ansiosa')">😟</button>
+            <button class="emoji-btn" onclick="guardarAnimo('Vulnerable')">😢</button>
+            <button class="emoji-btn" onclick="guardarAnimo('Triste')">😔</button>
+            <button class="emoji-btn" onclick="guardarAnimo('Enojada')">😠</button>
+        </div>
+        <div id="descripcionAnimo"></div>
+        <div class="frase" id="fraseMotivadora"></div>
+    </div>
+
+<!-- Apartado de Mensaje Secreto -->
+<div class="mensaje-secreto">
+    <button onclick="enviarMensaje()">MENSAJE SECRETO</button>
+</div>
+
+
+
+    <script src="app.js"></script> <!-- Asegúrate de enlazar el JS -->
+</body>
+</html>

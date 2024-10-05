@@ -1,0 +1,107 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 50px;
+    transition: background-color 0.3s; /* Transición suave para el cambio de color */
+}
+
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: auto;
+}
+
+h1 {
+    color: #333;
+}
+
+.emojis {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.emoji-btn {
+    font-size: 2.5em;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s;
+    padding: 10px;
+    border-radius: 8px;
+    width: 80px;
+    height: 80px;
+}
+
+.emoji-btn:hover {
+    transform: scale(1.1);
+    background-color: #f0f0f0;
+}
+
+#descripcionAnimo {
+    margin-top: 20px;
+    font-size: 1.1em;
+    color: #555;
+}
+
+.frase {
+    margin-top: 15px;
+    font-size: 1.2em;
+    color: #333;
+    line-height: 1.5;
+    background-color: #f9f9f9;
+    border-left: 4px solid #4a90e2;
+    padding: 15px;
+    border-radius: 8px;
+    opacity: 1; /* Asegúrate de que el texto sea visible al principio */
+    transition: opacity 0.3s; /* Transición suave para el desvanecimiento */
+}
+
+/* Cambios de color por estado de ánimo */
+body.feliz {
+    background-color: #ffeb3b; /* amarillo */
+}
+
+body.estresada {
+    background-color: #f44336; /* rojo */
+}
+
+body.ansiosa {
+    background-color: #2196f3; /* azul */
+}
+
+body.vulnerable {
+    background-color: #9c27b0; /* púrpura */
+}
+
+body.triste {
+    background-color: #3f51b5; /* azul oscuro */
+}
+
+body.enojada {
+    background-color: #ff5722; /* naranja */
+}
+
+.mensaje-secreto {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.mensaje-secreto button {
+    background-color: #4a90e2;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+.mensaje-secreto button:hover {
+    background-color: #357abd;
+}
